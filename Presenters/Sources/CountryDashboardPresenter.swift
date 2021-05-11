@@ -17,4 +17,6 @@ public class CLCountryDashboardPresenter: CountryDashboardPresenter {
     init(dataProvider: CountriesDataProviderProtocol) {
         self.dataProvider = dataProvider
     }
+    
+    
 }

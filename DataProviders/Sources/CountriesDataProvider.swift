@@ -9,24 +9,20 @@ import Combine
 import Entities
 
 public protocol CountriesDataProviderProtocol {
-    func getAll() -> AnyPublisher<[Country], Error>
     func search(query: String) -> AnyPublisher<[Country], Error>
 }
 
+
 public class CountriesDataProvider: CountriesDataProviderProtocol {
+    public typealias Entity = Country
     private let service: CountriesAPIProtocol
     
     init(service: CountriesAPIProtocol) {
         self.service = service
     }
     
-    public func getAll() -> AnyPublisher<[Country], Error> {
-        return service.get()
-    }
-    
     public func search(query: String) -> AnyPublisher<[Country], Error> {
         return service.get(name: query)
-    }
-    
+    } 
     
 }

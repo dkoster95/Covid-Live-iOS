@@ -19,6 +19,7 @@
 		7F769AA5261AA143001054E0 /* DailyReportAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F769AA4261AA143001054E0 /* DailyReportAPI.swift */; };
 		7F769AA8261AA189001054E0 /* DailyTotalsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F769AA7261AA189001054E0 /* DailyTotalsAPI.swift */; };
 		7F769AAC261AAAC4001054E0 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F769AAB261AAAC4001054E0 /* Injector.swift */; };
+		7FED4002264B2396005958B6 /* ServerConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FED4001264B2396005958B6 /* ServerConfigTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		7F769AA4261AA143001054E0 /* DailyReportAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportAPI.swift; sourceTree = "<group>"; };
 		7F769AA7261AA189001054E0 /* DailyTotalsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTotalsAPI.swift; sourceTree = "<group>"; };
 		7F769AAB261AAAC4001054E0 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		7FED3FFC264B227C005958B6 /* APIConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = APIConfig.xcconfig; path = ../../../Sources/APIConfig.xcconfig; sourceTree = "<group>"; };
+		7FED4001264B2396005958B6 /* ServerConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfigTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,7 @@
 			children = (
 				7F769A13261A9953001054E0 /* DataProvidersTests.swift */,
 				7F769A15261A9953001054E0 /* Info.plist */,
+				7FED4001264B2396005958B6 /* ServerConfigTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7F769A7E261A9C9D001054E0 /* Server.swift */,
+				7FED3FFC264B227C005958B6 /* APIConfig.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FED4002264B2396005958B6 /* ServerConfigTests.swift in Sources */,
 				7F769A14261A9953001054E0 /* DataProvidersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +365,7 @@
 /* Begin XCBuildConfiguration section */
 		7F769A17261A9953001054E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FED3FFC264B227C005958B6 /* APIConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -423,6 +430,7 @@
 		};
 		7F769A18261A9953001054E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FED3FFC264B227C005958B6 /* APIConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
