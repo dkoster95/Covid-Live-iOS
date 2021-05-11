@@ -14,18 +14,10 @@
 		7F7699A7261A98AC001054E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7699A6261A98AC001054E0 /* Assets.xcassets */; };
 		7F7699AA261A98AC001054E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7699A8261A98AC001054E0 /* LaunchScreen.storyboard */; };
 		7F7699B5261A98AC001054E0 /* CovidLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7699B4261A98AC001054E0 /* CovidLiveTests.swift */; };
-		7F7699C0261A98AC001054E0 /* CovidLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7699BF261A98AC001054E0 /* CovidLiveUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7F7699B1261A98AC001054E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F769992261A98A9001054E0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7F769999261A98A9001054E0;
-			remoteInfo = CovidLive;
-		};
-		7F7699BC261A98AC001054E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F769992261A98A9001054E0 /* Project object */;
 			proxyType = 1;
@@ -46,9 +38,6 @@
 		7F7699B0261A98AC001054E0 /* CovidLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7699B4261A98AC001054E0 /* CovidLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidLiveTests.swift; sourceTree = "<group>"; };
 		7F7699B6261A98AC001054E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F7699BB261A98AC001054E0 /* CovidLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F7699BF261A98AC001054E0 /* CovidLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidLiveUITests.swift; sourceTree = "<group>"; };
-		7F7699C1261A98AC001054E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F7699B8261A98AC001054E0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +63,6 @@
 			children = (
 				7F76999C261A98A9001054E0 /* Sources */,
 				7F7699B3261A98AC001054E0 /* Tests */,
-				7F7699BE261A98AC001054E0 /* UITests */,
 				7F76999B261A98A9001054E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			children = (
 				7F76999A261A98A9001054E0 /* CovidLive.app */,
 				7F7699B0261A98AC001054E0 /* CovidLiveTests.xctest */,
-				7F7699BB261A98AC001054E0 /* CovidLiveUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +96,6 @@
 				7F7699B6261A98AC001054E0 /* Info.plist */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		7F7699BE261A98AC001054E0 /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				7F7699BF261A98AC001054E0 /* CovidLiveUITests.swift */,
-				7F7699C1261A98AC001054E0 /* Info.plist */,
-			);
-			path = UITests;
 			sourceTree = "<group>";
 		};
 		7F769A69261A9A4F001054E0 /* Views */ = {
@@ -182,24 +153,6 @@
 			productReference = 7F7699B0261A98AC001054E0 /* CovidLiveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7F7699BA261A98AC001054E0 /* CovidLiveUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7F7699CA261A98AC001054E0 /* Build configuration list for PBXNativeTarget "CovidLiveUITests" */;
-			buildPhases = (
-				7F7699B7261A98AC001054E0 /* Sources */,
-				7F7699B8261A98AC001054E0 /* Frameworks */,
-				7F7699B9261A98AC001054E0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7F7699BD261A98AC001054E0 /* PBXTargetDependency */,
-			);
-			name = CovidLiveUITests;
-			productName = CovidLiveUITests;
-			productReference = 7F7699BB261A98AC001054E0 /* CovidLiveUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,10 +166,6 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					7F7699AF261A98AC001054E0 = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 7F769999261A98A9001054E0;
-					};
-					7F7699BA261A98AC001054E0 = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = 7F769999261A98A9001054E0;
 					};
@@ -237,7 +186,6 @@
 			targets = (
 				7F769999261A98A9001054E0 /* CovidLive */,
 				7F7699AF261A98AC001054E0 /* CovidLiveTests */,
-				7F7699BA261A98AC001054E0 /* CovidLiveUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,13 +202,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7F7699AE261A98AC001054E0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F7699B9261A98AC001054E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,14 +229,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F7699B7261A98AC001054E0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F7699C0261A98AC001054E0 /* CovidLiveUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -303,11 +236,6 @@
 			isa = PBXTargetDependency;
 			target = 7F769999261A98A9001054E0 /* CovidLive */;
 			targetProxy = 7F7699B1261A98AC001054E0 /* PBXContainerItemProxy */;
-		};
-		7F7699BD261A98AC001054E0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7F769999261A98A9001054E0 /* CovidLive */;
-			targetProxy = 7F7699BC261A98AC001054E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -529,46 +457,6 @@
 			};
 			name = Release;
 		};
-		7F7699CB261A98AC001054E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6PEDY2NQHX;
-				INFOPLIST_FILE = UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quickhatch.labs.dk.CovidLiveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CovidLive;
-			};
-			name = Debug;
-		};
-		7F7699CC261A98AC001054E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6PEDY2NQHX;
-				INFOPLIST_FILE = UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quickhatch.labs.dk.CovidLiveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CovidLive;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -595,15 +483,6 @@
 			buildConfigurations = (
 				7F7699C8261A98AC001054E0 /* Debug */,
 				7F7699C9261A98AC001054E0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7F7699CA261A98AC001054E0 /* Build configuration list for PBXNativeTarget "CovidLiveUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F7699CB261A98AC001054E0 /* Debug */,
-				7F7699CC261A98AC001054E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
